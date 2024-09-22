@@ -1,0 +1,37 @@
+nav {
+    background-color: #333;
+    /* Dark background for the navigation bar */
+    padding: 10px 20px;
+    /* Spacing around the links */
+    display: flex;
+    /* Flexbox layout for horizontal alignment */
+    justify-content: space-around;
+    /* Evenly space the links */
+
+    a {
+        color: #fff;
+        /* White text color for links */
+        text-decoration: none;
+        /* Remove underline from links */
+        padding: 10px 15px;
+        /* Padding around each link */
+        border-radius: 5px;
+        /* Rounded corners for links */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        /* Smooth transition for hover effects */
+
+        &:hover {
+            background-color: #555;
+            /* Slightly lighter background on hover */
+            color: #ffcc00;
+            /* Change text color on hover */
+        }
+
+        &.active {
+            background-color: #ffcc00;
+            /* Highlight active link */
+            color: #333;
+            /* Dark text color on active link */
+        }
+    }
+}

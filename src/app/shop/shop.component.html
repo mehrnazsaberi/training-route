@@ -1,0 +1,10 @@
+<p>shop works!</p>
+<p>Welcome to the Shop page, guarded by CanActivate.</p>
+
+<a [routerLink]="['/shop']" [queryParams]="{ category: 'electronics', sort: 'price'}"
+    [state]="{ userId: 123, message: 'Hello' }" (click)="onHandleState()">Query Parameters</a>
+
+<h3 class="query-params"> Query Parameters : {{filter()}}</h3>
+<br>
+
+<a [routerLink]="['/product', product()]" class="link">Product Details</a>
