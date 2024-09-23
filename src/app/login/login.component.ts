@@ -22,10 +22,9 @@ export class LoginComponent {
 
   login() {
     if (this.authService.login(this.username, this.password)) {
-      this.router.navigate(['/dashboard']); // Redirect to the home page or any protected page after login
-      // const returnUrl =
-      //   this.route.snapshot.queryParams['returnUrl'] || '/home'; // Check if there's a return URL
-      // this.router.navigate([returnUrl]); // Redirect after successful login
+      // this.router.navigate(['/dashboard']); // Redirect to the home page or any protected page after login
+      const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/home'; // Check if there's a return URL
+      this.router.navigate([returnUrl]); // Redirect after successful login
     } else {
       this.loginError = 'Invalid username or password';
     }

@@ -4,7 +4,10 @@
 
 <button (click)="navigateTo('dashboard')">Go to dashboard (CanActivate)</button>
 <br><br>
-<button (click)="navigateTo('shop','users')">Go to shop (CanLoad-False)</button>&nbsp;
-<button (click)="navigateTo('shop','admin')">Go to shop (CanLoad-true)</button>
+<!-- <button (click)="navigateTo('shop','users')">Go to shop (CanLoad-False)</button>&nbsp;
+<button (click)="navigateTo('shop','admin')">Go to shop (CanLoad-true)</button> -->
+<button (click)="navigateTo('shop')">Go to shop (CanLoad)</button>
+
 <br><br>
-<button (click)="navigateTo('admin')">Go to Admin (CanMatch)</button>
+<button (click)="navigateTo('admin','users')">Go to shop (CanMatch-False)</button>&nbsp;
+<button (click)="navigateTo('admin','admin')">Go to Admin (CanMatch-true)</button>
